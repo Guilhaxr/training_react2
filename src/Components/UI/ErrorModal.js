@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Button from "./Button";
+// here i'm using the css modules
 import classes from "./ErrorModal.module.css"
 
 const ErrorModal = (props) => {

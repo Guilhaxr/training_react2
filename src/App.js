@@ -34,6 +34,8 @@ function App() {
 
   const [users, setUsers] = useState(dummy_data)
 
+
+  //im getting data from Users.js child but Users.js is getting data from UsersForm.js child.
   const addUserHandler = (user) =>{
     const userData = [
       setUsers((prevData)=>{

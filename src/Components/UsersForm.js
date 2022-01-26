@@ -18,7 +18,7 @@ const UsersForm = ({onSaveUserData}) => {
         setEnteredAge(event.target.value)
 
     }
-
+    //In this function if the user click in the button " close" or in the backdrop the model closes.
     const errorHandler= () => {
         setError(null)
     }
@@ -26,18 +26,21 @@ const UsersForm = ({onSaveUserData}) => {
     const submitHandler = (event) => {
         event.preventDefault();
 
+        // in this condition if the user doesn't write anything will receive an error;
         if( enteredUsername.trim().length === 0 || enteredAge.trim().length === 0){
            setError({
                title: "Invalid Input", 
                 message: "Please enter a valid name and age ( non-empty values)"
             })
+            return;
         }
-
+        // in this condition if the user writes an age less than 1 will receive an error;
         if(+enteredAge < 1){
             setError({
                 title: "Invalid Age", 
                  message: "Please enter a valid age "
              })
+             return;
         }
 
         const userData ={
@@ -57,6 +60,7 @@ const UsersForm = ({onSaveUserData}) => {
     
 return (
     <div>
+        {/* if the error's state is true ( have some data ) will appear the modal */}
         { error && <ErrorModal title={error.title} message={error.message}  onConfirm={errorHandler} /> }
         <form onSubmit={submitHandler}>
             <div className="new-users__controls">
