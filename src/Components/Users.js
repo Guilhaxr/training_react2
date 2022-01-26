@@ -1,5 +1,5 @@
 import "../Css/Users.css";
-import Card from "./Card";
+import Card from "./UI/Card";
 import UsersList from "./UsersList";
 
 

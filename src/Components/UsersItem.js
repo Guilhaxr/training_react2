@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "./UI/Card";
 import "../Css/UsersItem.css"
 
 const UsersItem = ({username, age}) => {
