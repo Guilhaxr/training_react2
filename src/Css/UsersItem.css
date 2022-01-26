@@ -1,0 +1,6 @@
+.user-Item__description{
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}

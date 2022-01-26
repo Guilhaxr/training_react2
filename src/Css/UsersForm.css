@@ -1,0 +1,27 @@
+.new-users__controls{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    
+}
+
+.new-users__control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6px 0px;
+    
+}
+
+
+
+.new-users__control label{
+    padding: 5px, 0px;
+   font-weight: bold;
+
+}
+
+.new-users__control input{
+ 
+   
+}
